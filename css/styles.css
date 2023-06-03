@@ -65,21 +65,20 @@ main {
 
 .pagamento {
   border-radius: 0 0 0 10px;
-  padding: 50px;
+  padding: 6%;
   width: 65%;
   background-color: #da7f7f;
   color: #ffffff;
 }
 
 h2 {
-
   font-weight: 700;
   font-size: 16pt;
 }
 
 .outras-infos {
   border-radius: 0 0 10px 0;
-  padding: 50px;
+  padding: 6%;
   width: 35%;
   background-color: #da7f7f49;  
   border: 2px solid #da7f7f;
@@ -87,7 +86,30 @@ h2 {
   color: #ffffff;
 }
 
+.meios {
+  display: flex;
+  margin: 15px 0;
+  text-align: center;
+  font-size: 9pt;
+}
+
+.meio {
+  width: 33%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.meio:hover {
+  background-color: #C67070;
+}
+
+.img-meio {
+  height: 24px;
+}
+
 @media (max-width: 400px) {
+
+  /* Header */
 
   header {
     padding: 30px 30px 40px 30px;
@@ -100,5 +122,34 @@ h2 {
 
   .icon {
     height: 16px;
+  }
+
+  /* Main */
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pagamento {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .outras-infos {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  h2 {
+    font-size: 12pt;
+  }
+
+  .meios {
+    flex-direction: column;
+  }
+
+  .meio {
+    width: 100%;
   }
 }
