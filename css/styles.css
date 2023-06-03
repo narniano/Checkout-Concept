@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #ebcdcdc5;
+  padding: 5%;
+}
+
+/* Header */
+
+header {
+  border: none;
+  border-radius: 10px 10px 0 0;
+  padding: 50px 50px 80px 50px;
+  background-color: #ffffff88;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+}
+
+.progresso {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.legenda {
+  position: absolute; /* Permite que o texto acompanhe a imagem da mesma div (posição relativa) */
+  margin-top: 25px;
+  font-size: 8pt;
+  text-align: center;
+}
+
+.barra1 {
+  flex-grow: 1; /* Faz com que o hr preencha todo o espaço disponível */
+  margin: auto;
+  border: 2px solid #C67070;
+  height: 2px;
+}
+
+.barra2 {
+  flex-grow: 1;
+  margin: auto;
+  border: 2px solid #ebcdcd;
+  height: 2px;
+}
+
+.icon {
+  height: 24px;
+}
+
+/* Main */
+
+main {
+  display: flex;
+}
+
+.pagamento {
+  border-radius: 0 0 0 10px;
+  padding: 50px;
+  width: 65%;
+  background-color: #da7f7f9c;
+  color: #fff6f6;
+}
+
+h2 {
+  font-family: 'Cardo';
+  font-weight: 700;
+  font-size: 16pt;
+}
+
+.outras-infos {
+  border-radius: 0 0 10px 0;
+  padding: 50px;
+  width: 35%;
+  background-color: #bdaaaa36;  
+  color: #fff6f6;
+}
+
+@media (max-width: 400px) {
+
+  header {
+    padding: 30px 30px 40px 30px;
+  }
+
+  .legenda {
+    font-size: 6pt;
+    margin-top: 20px;
+  }
+
+  .icon {
+    height: 16px;
+  }
+}
