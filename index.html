@@ -5,58 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Checkout</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/8ae2cbf719.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <header>
       <div class="container">
-      <div class="progresso">
-          <img src="verificado.png" class="icon">
-            <p class="legenda">Carrinho</p>
+        <div class="progresso">
+          <img src="images/verificado.png" class="icon" />
+          <p class="legenda">Carrinho</p>
+        </div>
+        <hr class="barra1" />
+        <div class="progresso">
+          <img src="images/verificado.png" class="icon" />
+          <p class="legenda">Informações<br />de contato</p>
+        </div>
+        <hr class="barra1" />
+        <div class="progresso">
+          <img src="images/verificado2.png" class="icon" />
+          <p class="legenda">Método de<br />pagamento</p>
+        </div>
+        <hr class="barra2" />
+        <div class="progresso">
+          <img src="images/verificado3.png" class="icon" />
+          <p class="legenda">Confirmação</p>
+        </div>
       </div>
-      <hr class="barra1">
-      <div class="progresso">
-        <img src="verificado.png" class="icon">
-        <p class="legenda">Informações <br> de contato</p>
-      </div>
-      <hr class="barra1">
-      <div class="progresso">
-        <img src="verificado2.png" class="icon">
-        <p class="legenda">Método de <br>pagamento</p>
-      </div>
-      <hr class="barra2">
-      <div class="progresso">
-        <img src="verificado3.png" class="icon">
-        <p class="legenda">Confirmação</p>
-      </div>
-    </div>
     </header>
     <main>
-        <div class="pagamento">
-          <h2>Selecione o meio de pagamento</h2>
-          <div class="meios">
-            <div class="meio">
-              <img src="cartao.png" class="img-meio">
-              <p>Cartão de crédito</p>
-            </div>
-            <div class="meio">
-              <img src="paypal.png" class="img-meio">
-              <p>PayPal</p>
-            </div>
-            <div class="meio">
-              <img src="pix.png" class="img-meio">
-              <p>Pix</p>
-            </div>
+      <div class="pagamento">
+        <h2>Selecione o meio de pagamento</h2>
+        <div class="meios">
+          <div class="meio">
+            <img src="images/cartao.png" class="img-meio" />
+            <p>Cartão de crédito</p>
           </div>
-
-          
-
-
+          <div class="meio">
+            <img src="images/paypal.png" class="img-meio" />
+            <p>PayPal</p>
+          </div>
+          <div class="meio">
+            <img src="images/pix.png" class="img-meio" />
+            <p>Pix</p>
+          </div>
         </div>
-        <div class="outras-infos">
 
+        <div class="formulario">
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" />
+
+        <div class="numero-cartao">
+          <input
+            type="text"
+            name="credito"
+            id="credito"
+            placeholder="Número do cartão"
+          />
+          <button id="verificar">Verificar cartão</button>
         </div>
+        <div class="outros-dados-cartao">
+          <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;""></i>
+          <i class="fa-brands fa-cc-amex" style="color: #ffffff;""></i>
+        <input type="month" id="month" placeholder="Mês/Ano"/>
+        <input type="text" id="cvv" placeholder="CVV"/>
+      </div>
+      </div>
+    </div>
+      <div class="outras-infos"></div>
     </main>
+
+    <script src="js/cleave.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

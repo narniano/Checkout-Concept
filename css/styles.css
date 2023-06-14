@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: white;
   padding: 5%;
 }
@@ -42,7 +42,7 @@ header {
 .barra1 {
   flex-grow: 1; /* Faz com que o hr preencha todo o espaço disponível */
   margin: auto;
-  border: 2px solid #C67070;
+  border: 2px solid #c67070;
   height: 2px;
 }
 
@@ -80,7 +80,7 @@ h2 {
   border-radius: 0 0 10px 0;
   padding: 6%;
   width: 35%;
-  background-color: #da7f7f49;  
+  background-color: #da7f7f49;
   border: 2px solid #da7f7f;
   border-top: 0;
   color: #ffffff;
@@ -100,15 +100,37 @@ h2 {
 }
 
 .meio:hover {
-  background-color: #C67070;
+  background-color: #c67070;
 }
 
 .img-meio {
   height: 24px;
 }
 
-@media (max-width: 400px) {
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.numero-cartao {
+  display: flex;
+  gap: 10px;
+}
+
+#credito {
+  flex-grow: 1;
+}
+
+.outros-dados-cartao {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Media Queries */
+
+@media (max-width: 400px) {
   /* Header */
 
   header {
